@@ -1,0 +1,163 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    /* background-color: aliceblue; */
+    /* background-blend-mode: multiply; */
+}
+
+h1 {
+    font-size: 3em;
+    color: aliceblue;
+    /* padding-top: 10%; */
+    /* color: lightblue; */
+    /* position: fixed;
+    left: 0;
+    right: 0; */
+    margin: 0;
+}
+
+aside {
+    width: 66%;
+    align-self: center;
+}
+
+h2 {
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 1000;
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+section {
+    margin: 10;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.inline {
+    display: inline;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.header-card {
+    /* background-color: aliceblue; */
+    background-color: hsla(207, 100%, 96%, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-card {
+    /* background-color: hsla(207, 100%, 96%, .8); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+body {
+    font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+    color: aliceblue;
+}
+
+.bg {
+    background-image: url(background.jpg);
+    /* background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.panel {
+    background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    width: 80%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 3%;
+    box-shadow: rgba(255, 255, 255, 0.5) -20px -20px 45px inset, rgba(0, 0, 0, 0.1) 10px 10px 20px, rgba(0, 0, 0, 0.06) 5px 5px 10px;
+    position: relative;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    display: flex;
+    flex-direction: column;
+    /* &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(255, 255, 255, 0) 40%
+    );
+    pointer-events: none;
+  } */
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 1000;
+    margin-top: 0;
+    /* display: inline; */
+}
+
+.card__text {
+    font-size: 14px;
+    line-height: 1.45;
+    opacity: 0.8;
+    margin-bottom: 2em;
+    text-align: start;
+}
+
+.button {
+    display: inline-block;
+    padding: 1.5em 3em;
+    background-image: linear-gradient( -45deg, rgba(9, 28, 60, 1) 0%, rgba(67, 46, 103, 1) 100%);
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    border-radius: 10em;
+    color: white;
+}
