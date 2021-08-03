@@ -59,9 +59,9 @@ header {
 }
 
 .scroll-down {
-    position: relative;
-    left: 48%;
-    bottom: 1vh;
+    position: absolute;
+    left: 50vw;
+    bottom: 5vh;
     display: block;
     text-align: center;
     font-size: 1em;
