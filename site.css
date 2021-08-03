@@ -40,6 +40,7 @@ header {
     margin: 0;
     padding: 0;
     color: aliceblue;
+    bottom: 10vh;
 }
 
 .title h3 {
@@ -51,27 +52,41 @@ header {
 
 .title .smallsep {
     background: #fff;
-    height: 2px;
-    width: 70px;
+    height: .5vh;
+    width: 33vw;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+.nav h2 {
+    position: absolute;
+    height: 5vh;
+    bottom: 0;
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    margin: 0;
+}
+
 .scroll-down {
     position: absolute;
-    left: 50vw;
-    bottom: 5vh;
-    display: block;
+    left: 47.5vw;
+    bottom: 15vh;
     text-align: center;
     font-size: 1em;
     z-index: 100;
     text-decoration: none;
     text-shadow: 0;
-    width: 15px;
-    height: 15px;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
+    width: 5vh;
+    height: 5vh;
+    border-bottom: .5vh solid #fff;
+    border-right: .5vh solid #fff;
     z-index: 9;
     /* flex-grow: 1; */
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
@@ -80,6 +95,37 @@ header {
     -webkit-animation: fade_move_down 2s ease-in-out infinite;
     -moz-animation: fade_move_down 2s ease-in-out infinite;
     animation: fade_move_down 2s ease-in-out infinite;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.panel {
+    background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+    /* backdrop-filter: blur(6px); */
+    border-radius: 12px;
+    width: 80%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 3%;
+    box-shadow: rgba(255, 255, 255, 0.5) -20px -20px 45px inset, rgba(0, 0, 0, 0.1) 10px 10px 20px, rgba(0, 0, 0, 0.06) 5px 5px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    content: "";
+    display: block;
+    position: relative;
+    background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 40%, rgba(255, 255, 255, 0) 40%);
+    pointer-events: none;
+    z-index: -1;
+    position: relative;
 }
 
 
@@ -125,42 +171,4 @@ header {
         transform: translate(0, 10px) rotate(45deg);
         opacity: 0;
     }
-}
-
-.resume {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.resume h2 {
-    color: aliceblue;
-    font-size: 32px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.panel {
-    background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
-    /* backdrop-filter: blur(6px); */
-    border-radius: 12px;
-    width: 80%;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 3%;
-    box-shadow: rgba(255, 255, 255, 0.5) -20px -20px 45px inset, rgba(0, 0, 0, 0.1) 10px 10px 20px, rgba(0, 0, 0, 0.06) 5px 5px 10px;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    flex-direction: column;
-    content: "";
-    display: block;
-    position: relative;
-    background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 40%, rgba(255, 255, 255, 0) 40%);
-    pointer-events: none;
-    z-index: -1;
-    position: relative;
 }
