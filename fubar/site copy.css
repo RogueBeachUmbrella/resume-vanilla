@@ -660,14 +660,14 @@ h6 {
         display: block;
         text-align: center;
         font-size: 2em;
-        z-index: 100;
+        /* z-index: 100; */
         text-decoration: none;
         text-shadow: 0;
-        width: 33px;
-        height: 33px;
+        width: 3em;
+        height: 3em;
         border-bottom: 10px solid #fff;
         border-right: 10px solid #fff;
-        z-index: 9;
+        z-index: -1;
         -webkit-transform: translate(-50%, 0%) rotate(45deg);
         -moz-transform: translate(-50%, 0%) rotate(45deg);
         transform: translate(-50%, 0%) rotate(45deg);
