@@ -3,7 +3,7 @@ class StickyNavigation {
     constructor() {
         this.currentId = null;
         this.currentTab = null;
-        this.tabContainerHeight = 70;
+        this.tabContainerHeight = 200;
         let self = this;
         $('.et-hero-tab').click(function() {
             self.onTabClick(Event, $(this));
@@ -31,7 +31,7 @@ class StickyNavigation {
 
     checkTabContainerPosition() {
         let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
-        if ($(window).scrollTop() > offset) {
+        if ($(window).scrollTop() >= offset) {
             $('.et-hero-tabs-container').addClass('--top');
         } else {
             $('.et-hero-tabs-container').removeClass('--top');
