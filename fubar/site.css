@@ -9,10 +9,7 @@ body {
     background-size: cover;
 }
 
-a,
-a:link,
-a:visited {
-    color: inherit;
+a {
     text-decoration: none;
 }
 
@@ -43,7 +40,7 @@ a:visited {
 
 .et-slide {
     position: relative;
-    padding-top: 11em;
+    margin-top: 11em;
 }
 
 .et-hero-tabs {
@@ -76,7 +73,6 @@ h2 {
     font-size: 1em;
     font-weight: 100;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 h3 {
@@ -124,7 +120,6 @@ span {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #fff;
     z-index: 10;
-    color: black;
 }
 
 .--top {
@@ -159,6 +154,14 @@ hover {
     height: 6px;
     background: #66B1F1;
     transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 800px) {
@@ -199,7 +202,7 @@ footer {
     display: block;
     text-align: center;
     font-size: 2em;
-    /* z-index: 100; */
+    z-index: 100;
     text-decoration: none;
     text-shadow: 0;
     width: .5em;
@@ -214,9 +217,6 @@ footer {
     -moz-animation: fade_move_down_rotate 2s ease-in-out infinite;
     animation: fade_move_down_rotate 2s ease-in-out infinite;
 }
-
-
-/*animated scroll arrow animation*/
 
 @-webkit-keyframes fade_move_down_rotate {
     0% {
