@@ -2,7 +2,8 @@ body,
 html {
     min-width: fit-content;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     color: aliceblue;
     margin: 0;
     padding: 0;
@@ -43,7 +44,11 @@ html {
 
 .et-slide {
     position: relative;
-    margin: 5em 0 0;
+    margin: 1vh 0 0;
+}
+
+.spacer {
+    height: 1vh;
 }
 
 .smallsep {
@@ -55,13 +60,21 @@ html {
     margin-bottom: 3vh;
 }
 
+.main {
+    margin-top: 1vh;
+}
+
 h1 {
     font-size: 3em;
     font-family: 'Poiret One', cursive;
     text-align: center;
     font-variant: small-caps;
     letter-spacing: .5em;
-    font-weight: bolder;
+    font-weight: 900;
+}
+
+section {
+    margin-top: 1vh
 }
 
 
@@ -76,15 +89,16 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Poiret One', cursive;
-    font-weight: lighter;
+    font-weight: bolder;
     letter-spacing: .5em;
-    padding-top: 5vh;
+    margin-top: 0;
 }
 
 h3 {
     position: absolute;
     left: 0;
     right: 0;
+    font-size: 1.2em;
     font-weight: 100;
     text-transform: uppercase;
     text-decoration: none;
@@ -95,20 +109,25 @@ h4 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Poiret One', cursive;
-    font-weight: lighter;
-    /* font-size: 2em; */
-    /* margin: 3% 0 3% 0; */
+    font-weight: 100;
 }
 
 h5 {
     font-size: 1em;
     margin: 3% 0 3% 0;
-    /* flex-grow: 1; */
     justify-content: center;
 }
 
 span {
     font-size: .5em;
+    font-weight: bold;
+}
+
+.type {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    /* letter-spacing: .05em; */
 }
 
 a,
@@ -200,27 +219,51 @@ a:visited {
     align-content: center;
     justify-content: start;
     flex-wrap: wrap;
-    background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+    pointer-events: none;
+    /* padding: 1em 1em; */
+    margin: 1em;
+    z-index: -1;
     border-radius: 12px;
+    background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 1em 1em;
-    margin: 1.5em;
     box-shadow: rgba(255, 255, 255, 0.5) -20px -20px 45px inset, rgba(0, 0, 0, 0.1) 10px 10px 20px, rgba(0, 0, 0, 0.06) 5px 5px 10px;
-    /* position: sticky; */
     background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 40%, rgba(255, 255, 255, 0) 40%);
-    pointer-events: none;
-    z-index: -1;
 }
+
+
+/* .glass {
+    background-size: cover;
+    background-position: center;
+    clip-path: inset(10em);
+    filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+} */
 
 ul {
     list-style-type: circle;
-    margin: 1em;
+    /* margin: 1em; */
     padding: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 ul li {
+    list-style-type: circle;
     margin: 1em 0em;
+    font-size: .75em;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1em;
+    margin: 0 1em;
 }
 
 
@@ -239,6 +282,15 @@ ul li {
     display: inline;
     flex-grow: 1;
 } */
+
+.animate {
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    -webkit-animation: fade_move_down 2s ease-in-out infinite;
+    -moz-animation: fade_move_down 2s ease-in-out infinite;
+    animation: fade_move_down 2s ease-in-out infinite;
+}
 
 
 /*animated scroll arrow animation*/
@@ -283,15 +335,6 @@ ul li {
         transform: translate(0, 10px) rotate(45deg);
         opacity: 0;
     }
-}
-
-.animate {
-    -webkit-transform: translate(-50%, 0%);
-    -moz-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-    -webkit-animation: fade_move_down 2s ease-in-out infinite;
-    -moz-animation: fade_move_down 2s ease-in-out infinite;
-    animation: fade_move_down 2s ease-in-out infinite;
 }
 
 
