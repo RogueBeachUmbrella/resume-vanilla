@@ -9,32 +9,32 @@ class StickyNavigation {
         $('.et-hero-tab').click(function() {
             self.onTabClick(Event, $(this));
         });
-        $(window).scroll(() => { this.onScroll(); });
+        $('html, body').scroll(() => { this.onScroll(); });
         $(window).resize(() => { this.onResize(); });
     }
 
     onTabClick(event, element) {
-        console.log('ontabclick');
-        event.preventDefault();
-        let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+        // console.log('ontabclick');
+        event.preventDefault;
+        let scrollTop = $(element.attr('html, body')).offset().top - this.tabContainerHeight + 1;
         $('html, body').animate({ scrollTop: scrollTop }, 600);
     }
 
     onScroll() {
-        console.log('on scroll');
+        // console.log('on scroll');
         this.checkTabContainerPosition();
         this.findCurrentTabSelector();
     }
 
     onResize() {
-        console.log('on resize');
+        // console.log('on resize');
         if (this.currentId) {
             this.setSliderCss();
         }
     }
 
     checkTabContainerPosition() {
-        console.log('Check tab container height');
+        // console.log('Check tab container height');
         let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
         if ($(window).scrollTop() >= offset) {
             $('.et-hero-tabs-container').addClass('top');
@@ -44,7 +44,7 @@ class StickyNavigation {
     }
 
     findCurrentTabSelector(element) {
-        console.log('find current tab selector');
+        // console.log('find current tab selector');
         let newCurrentId;
         let newCurrentTab;
         let self = this;
@@ -65,7 +65,7 @@ class StickyNavigation {
     }
 
     setSliderCss() {
-        console.log('set slider css');
+        // console.log('set slider css');
         let width = 0;
         let left = 0;
         if (this.currentTab) {
